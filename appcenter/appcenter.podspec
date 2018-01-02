@@ -13,12 +13,11 @@ Pod::Spec.new do |s|
   s.author           = { 'Microsoft' => 'appcentersdk@microsoft.com' }
 
   s.source = { :git => "https://github.com/Microsoft/AppCenter-SDK-React-Native.git" }
-  s.source_files = "appcenter-analytics/ios/AppCenterReactNativeAnalytics/*.{h,m}"
+  s.source_files = "ios/AppCenterReactNative/*.{h,m}"
   s.platform          = :ios, '8.0'
   s.requires_arc      = true
 
   s.vendored_frameworks = 'AppCenterReactNativeShared/AppCenterReactNativeShared.framework'
 
   s.dependency 'AppCenterReactNativeShared'
-  s.dependency 'AppCenter/Analytics'
 end
